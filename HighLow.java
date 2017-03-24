@@ -16,21 +16,23 @@ public class HighLow{
 		// guessed right
 
 		int number = (int) (100*Math.random());
-		
+		int counter = 0;
 		//System.out.println(number);
 
 		System.out.println("Guess a number between 0-99");
 		int guess = key.nextInt();
+		counter++;
 		while(guess != number){
 			if(guess > number){
 				System.out.println("You guessed too high");
-				
+
 			}else if(guess < number){
 				System.out.println("You guessed too low");
 			}
-			System.out.println("Try again:");
+			System.out.print("Try again: ");
+			counter++;
 			guess = key.nextInt();
 		}
-		System.out.println("You guessed right!");
+		System.out.println("You guessed right! You did it in "+counter+" guesses");
 	}
 }
