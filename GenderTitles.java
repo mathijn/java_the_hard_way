@@ -21,6 +21,7 @@ public class GenderTitles{
 				title = "Ms. ";
 			}
 		}else {
+			//if this would become an other if statement like if(gender.equals("M")), then the compiler will give an error becaues there is a way for title not to be set, which gives an error.
 			title = "Mr. ";
 		}
 
