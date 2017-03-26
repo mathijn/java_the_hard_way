@@ -3,6 +3,10 @@ import java.util.concurrent.TimeUnit;
 
 public class myPigGame{
 
+	/*
+	Voor de Pig game gebruik ik een aantal methods, echter is dat niet noodzakelijk maar doe ik het puur als oefening
+	*/
+
 	public static int counterPlayer, counterComp, dice, maxScore = 30;
 
 	public static void main(String[] args) {
