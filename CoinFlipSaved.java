@@ -51,6 +51,8 @@ public class CoinFlipSaved {
 				bestName = key.next();
 				saveStreak(bestName, streak);
 				System.out.println("\n");
+			}else if(streak == best){
+				System.out.println("\nYou were so close, it is a tie with the high score (high score: "+streak+")");
 			}else{
 				System.out.println("\n\tYou did not beat the high score");
 			}
@@ -72,7 +74,6 @@ public class CoinFlipSaved {
 		}else{
 			System.out.println("\nThere is no save file or high score set");
 			best = -1;
-			bestName = "";
 		}
 		return best;
 	}
